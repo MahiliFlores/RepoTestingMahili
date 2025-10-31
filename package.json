@@ -1,0 +1,26 @@
+{
+  "name": "repotestingmahili",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MahiliFlores/RepoTestingMahili.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MahiliFlores/RepoTestingMahili/issues"
+  },
+  "homepage": "https://github.com/MahiliFlores/RepoTestingMahili#readme",
+  "devDependencies": {
+    "@codeceptjs/allure-legacy": "^1.0.2",
+    "allure-commandline": "^2.34.1",
+    "codeceptjs": "^3.7.5",
+    "playwright": "^1.56.1"
+  }
+}
