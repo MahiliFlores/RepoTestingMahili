@@ -1,12 +1,11 @@
 const { mercadolibre_page } = inject();
 
 Given(/^I am on the mercado libre home page$/, () => {
- mercadolibre_page.Home();
-
+  mercadolibre_page.Home();
 });
 
 When(/^Select Mexico as the country$/, async() => {
- await mercadolibre_page.SelectCountry();
+  await mercadolibre_page.SelectCountry();
 
 });
 

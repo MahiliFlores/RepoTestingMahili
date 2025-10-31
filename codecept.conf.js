@@ -7,8 +7,8 @@ exports.config = {
       browser: 'chromium',
       url: 'https://www.mercadolibre.com/',
       show: true,
-     //  keepBrowserState: true,   
-      //keepCookies: true,
+     keepBrowserState: true,   
+      keepCookies: true,
       locale: "es-MX"
     }
   },
