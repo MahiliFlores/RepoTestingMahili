@@ -21,9 +21,12 @@ class mercadolibre_page {
   };
   Home() {
     I.amOnPage('/');
+
   }
 
   async SelectCountry() {
+
+
     await I.waitForElement(this.fields.Pais, 10);
     await I.click(this.fields.Pais);
     try {
@@ -106,3 +109,5 @@ class mercadolibre_page {
   }
 }
 module.exports = new mercadolibre_page(); 
+
+//cambio para generar un pull
