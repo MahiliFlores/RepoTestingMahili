@@ -7,23 +7,27 @@ exports.config = {
       browser: 'chromium',
       url: 'https://www.mercadolibre.com/',
       show: true,
-     keepBrowserState: true,   
-      keepCookies: true,
+     //  keepBrowserState: true,   
+      //keepCookies: true,
       locale: "es-MX"
     }
   },
   include: {
     I: './steps_file.js',
-     mercadolibre_page: "./pages/mercadolibre_page.js"
+    mercadolibre_page: "./pages/mercadolibre_page.js"
   },
   plugins: {
     allure: {
       enabled: true, // activar el plugin
       require: '@codeceptjs/allure-legacy',
-      outputDir: './output/allure-results'
+      outputDir: './output/allure-results',
+      screenshots: true,
+      fullPageScreenshots: true,
+      screenshotOnFail: true,
+      stepByStepReport: true
     }
   },
-   gherkin: {
+    gherkin: {
     features: "./features/*.feature",
     steps: [
       "./steps/MercadolibreSteps.js",
